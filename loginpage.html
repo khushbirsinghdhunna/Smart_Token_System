@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Smart Campus Queue System</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="loginpage.css">
+</head>
+<body>
+
+<div class="glass-wrapper">
+  <div class="app-title">🎓 Smart Campus Queue System</div>
+
+  <div class="login-card">
+    <h1>Welcome Back</h1>
+    <p>Please login to your account</p>
+
+    <div class="role-switch">
+      <button class="role-btn active" data-role="student">Student</button>
+      <button class="role-btn" data-role="faculty">Faculty</button>
+      <button class="role-btn" data-role="staff">Office Staff</button>
+    </div>
+
+    <!-- ✅ FORM ADDED -->
+    <form id="loginForm">
+      <!-- ✅ IDs ADDED -->
+      <input id="email" class="input" type="email" placeholder="Email" required>
+      <input id="password" class="input" type="password" placeholder="Password" required>
+
+      <button class="login-btn" type="submit">Login</button>
+    </form>
+
+    <div class="forgot">
+      <a href="#">Forgot password?</a>
+    </div>
+  </div>
+</div>
+
+<!-- ❌ REMOVE all firebase CDN scripts -->
+<!-- ✅ ONLY ONE MODULE SCRIPT -->
+<script type="module" src="login.js"></script>
+
+</body>
+
+</html>
